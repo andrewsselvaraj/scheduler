@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Scheduler {
   // @Scheduled(cron = "0 * 9 28 * ?")
-   @Scheduled(cron = "0/20 * * * * ?")
+   @Scheduled(cron = "0/25 * * * * ?")
    public void cronJobSch() {
       SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
       Date now = new Date();
